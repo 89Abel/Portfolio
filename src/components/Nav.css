@@ -1,0 +1,168 @@
+:root {
+  --font: "Roboto", sans-serif;
+  --primary-color: #191E29;
+  --sec-color: #132D46;
+  --text-color: #01C38D;
+  --gre-color: #696E79;
+  --white-color: #FFFFFF;
+}
+.navbar {
+    font-family: var(--font);
+  }
+  
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    background-color: var(--white-color);
+    box-shadow: 0px 10px 19px -23px rgba(0,0,0,0.75);
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-links {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .nav-item:last-child .nav-links{
+    color: #fff;
+    padding: 10px;
+    font-size: .9rem;
+    background-color: var(--text-color);
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+      }
+    .navbar-logo {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0 15px;
+      }
+    .menu-icon {
+      display: block;
+      margin: 7px 15px;
+      font-size: 20px;
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 59px;
+      left: -100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background-color: var(--white-color);
+      left: 0;
+      padding: 30px;
+    }
+  
+    .nav-item {
+      width: 100%;
+      margin: 10px 0px;
+    }
+    .nav-links {
+        color: var(--sec-color);
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    
+  }
+  /*
+  DECLARE
+    COUNTER1 NUMBER;
+	COUNTER2 NUMBER;
+    BEGIN
+FOR COUNTER1 IN 1..10 LOOP
+    FOR COUNTER2 IN COUNTER1 .. 10 LOOP
+    DBMS_OUTPUT.PUT_LINE('*');
+END LOOP;
+DBMS_OUTPUT.PUT_LINE('');
+END LOOP;
+END;
+-- full pyramid
+-- full inverted pyramid
+-- gojo house built from astrix
+--- program units, procedure, function, pacakges, objects
+CREATE OR REPLACE PROCEDURE GREETINGS
+AS
+BEGIN
+DBMS_OUTPUT.PUT_LINE('HELLO WORLD!');
+END;
+
+BEGIN
+ GREETINGS;
+END;
+-- OTHER WAY
+EXECUTE GREETINGS;
+-- PROCEDURE WITH PARAMETERS (VAR ACCEPT)
+DECLARE
+  total_rows NUMBER := 10; -- Total number of rows in the pyramid
+BEGIN
+  FOR i IN 1..total_rows LOOP
+    -- Print spaces for left padding
+    FOR j IN 1..(total_rows - i) LOOP
+      DBMS_OUTPUT.PUT(' ');
+    END LOOP;
+    
+    -- Print asterisks for the pyramid
+    FOR k IN 1..(2*i - 1) LOOP
+      DBMS_OUTPUT.PUT('*');
+    END LOOP;
+    
+    -- Move to the next line after printing each row
+    DBMS_OUTPUT.PUT_LINE('');
+  END LOOP;
+END;
+/
+-- write a recursive pl/sql function calculate the factorial of a number
+
+  */

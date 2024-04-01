@@ -1,0 +1,746 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #home {
+        flex-direction: column;
+    }
+
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-left .name {
+        color: var(--gre-color);
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+
+    .home-left .career {
+        color: var(--text-color);
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+
+    .home-left .career span {
+        color: var(--sec-color);
+        font-size: 30px;
+        font-weight: 500;
+        margin: 10px 0px;
+    }
+
+    .home-left .decription {
+        color: var(--primary-color);
+        font-size: 15px;
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+
+    .home-left .btn-portfolio {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 20px 0px;
+        color: var(--white-color);
+        background-color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .home-left .btn-portfolio ion-icon {
+        color: var(--white-color);
+        padding-left: 7px;
+        transform: rotate(10deg);
+    }
+
+    .home-right img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #about {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font);
+    }
+
+    .about-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 40px;
+    }
+
+    .about-left .about-title {
+        font-size: 20px;
+        color: var(--text-color);
+    }
+
+    .about-left .about-decription1 {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .about-left .about-decription2 {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .about-left .about-contact .abt-lists,
+    .about-left .about-contact .abt-lists ion-icon {
+        font-size: 15px;
+        padding: 0px 5px;
+        color: var(--gre-color);
+    }
+
+    .about-right {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-right::after {
+        content: 'Years of Experience';
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: var(--text-color);
+        padding: 10px 20px;
+        opacity: .8;
+        z-index: 200;
+    }
+
+    .about-right::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+        opacity: .4;
+        z-index: 1;
+    }
+
+    .about-right img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+        z-index: 100;
+    }
+
+    .about-left .about-social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-left .about-social #about-icon {
+        color: var(--text-color);
+        font-size: 20px;
+        padding: 0px 7px;
+    }
+
+    #services {
+        font-family: var(--font);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .services-title {
+        color: var(--sec-color);
+        font-size: 20px;
+    }
+
+    #services .services-subtitle {
+        color: var(--text-color);
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #services .services-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #services .services-cards .services-card {
+        position: relative;
+        width: 200px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--text-color);
+        padding: 20px;
+    }
+
+    #services .services-cards .services-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #services .services-cards .services-card .services-card-title {
+        color: var(--white-color);
+        font-size: 17px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+
+    #services .services-cards .services-card .services-card-desc {
+        font-size: 10px;
+        color: var(--primary-color);
+        text-align: left;
+        margin: 10px 0px;
+    }
+
+    #packages {
+        font-family: var(--font);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    #packages .pacages-cards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+        margin-top: 3rem;
+    }
+    #packages .pacages-cards .plan-lists .plan-icon{
+        font-size: 20px;
+        color: #01C38D;
+        margin-right: 20px;
+    }
+    #packages .pacages-cards .plan-lists{
+        font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    #packages .pacages-cards .plans {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: #f1f1f1f1;
+    }
+
+    .plans-title {
+        color: #01C38D;
+        font-size: 20px;
+    }
+
+    .plans-price {
+        font-size: 13px;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .plan-btn {
+        display: block;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid var(--text-color);
+        border-radius: 20px;
+        color: var(--text-color);
+        background-color: var(--white-color);
+    }
+
+    #testimonial {
+        font-family: var(--font);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        color: #000;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 40px 60px;
+    }
+
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+    }
+
+    .swiper-slide .title img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid var(--text-color);
+        border-radius: 50%;
+    }
+
+    .swiper-slide .text {
+        position: relative;
+        font-size: 15px;
+        max-width: 400px;
+        text-align: center;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        padding: 15px;
+        margin-top: 10px;
+        line-height: 1.3;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #home{
+        justify-content: space-around;
+    }
+    .home-left .name {
+        color: var(--gre-color);
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+
+    .home-left .career {
+        color: var(--text-color);
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+
+    .home-left .career span {
+        color: var(--sec-color);
+        font-size: 30px;
+        font-weight: 500;
+        margin: 10px 0px;
+    }
+
+    .home-left .decription {
+        color: var(--primary-color);
+        font-size: 15px;
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+
+    .home-left .btn-portfolio {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 20px 0px;
+        color: var(--white-color);
+        background-color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .home-left .btn-portfolio ion-icon {
+        color: var(--white-color);
+        padding-left: 7px;
+        transform: rotate(10deg);
+    }
+
+    .home-right img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #about {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font);
+    }
+
+    .about-left {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        padding: 10px 40px;
+    }
+
+    .about-left .about-title {
+        font-size: 20px;
+        color: var(--text-color);
+    }
+
+    .about-left .about-decription1 {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .about-left .about-decription2 {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .about-left .about-contact .abt-lists,
+    .about-left .about-contact .abt-lists ion-icon {
+        font-size: 15px;
+        padding: 0px 5px;
+        color: var(--gre-color);
+    }
+
+    .about-right {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-right::after {
+        content: 'Years of Experience';
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: var(--text-color);
+        padding: 10px 20px;
+        opacity: .8;
+        z-index: 200;
+    }
+
+    .about-right::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+        opacity: .4;
+        z-index: 1;
+    }
+
+    .about-right img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+        z-index: 100;
+    }
+
+    .about-left .about-social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-left .about-social #about-icon {
+        color: var(--text-color);
+        font-size: 20px;
+        padding: 0px 7px;
+    }
+
+    #services {
+        font-family: var(--font);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .services-title {
+        color: var(--sec-color);
+        font-size: 20px;
+    }
+
+    #services .services-subtitle {
+        color: var(--text-color);
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #services .services-cards {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #services .services-cards .services-card {
+        position: relative;
+        width: 200px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--text-color);
+        padding: 20px;
+    }
+
+    #services .services-cards .services-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #services .services-cards .services-card .services-card-title {
+        color: var(--white-color);
+        font-size: 17px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+
+    #services .services-cards .services-card .services-card-desc {
+        font-size: 10px;
+        color: var(--primary-color);
+        text-align: left;
+        margin: 10px 0px;
+    }
+
+    #packages {
+        font-family: var(--font);
+        text-align: center;
+    }
+
+    #packages .pacages-cards {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem
+    }
+    #packages .pacages-cards .plan-lists{
+        font-size: 12px;
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+        margin: 10px;
+    }
+
+    #packages .pacages-cards .plans {
+        width: 200px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: #f1f1f1f1;
+    }
+
+    .plans-title {
+        color: #01C38D;
+        font-size: 20px;
+    }
+
+    .plans-price {
+        font-size: 15px;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .plan-btn {
+        display: block;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid var(--text-color);
+        border-radius: 20px;
+        color: var(--text-color);
+        background-color: var(--white-color);
+    }
+
+    #testimonial {
+        font-family: var(--font);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        color: #000;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 40px 60px;
+    }
+
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+    }
+
+    .swiper-slide .title img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid var(--text-color);
+        border-radius: 50%;
+    }
+
+    .swiper-slide .text {
+        position: relative;
+        font-size: 15px;
+        max-width: 400px;
+        text-align: center;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        padding: 15px;
+        margin-top: 10px;
+        line-height: 1.3;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+:root {
+    /* Fonts */
+    --font: "Roboto", sans-serif;
+    /* Colors */
+    --primary-color: #191E29;
+    --sec-color: #132D46;
+    --text-color: #01C38D;
+    --gre-color: #696E79;
+    --white-color: #FFFFFF;
+    /* Font Size */
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    /* Grid columns */
+    --grid-columns-small: 1fr;
+    --grid-columns-medium: repeat(2, 1fr);
+    --grid-columns-large: repeat(3, 1fr);
+
+    /* Gap */
+    --grid-gap-small: 10px;
+    --grid-gap-medium: 20px;
+    --grid-gap-large: 30px;
+
+    /* Breakpoints */
+    --breakpoint-medium: 768px;
+    --breakpoint-large: 1024px;
+
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: var(--font);
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    border-radius: 40%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10000;
+}
+
+.scroll-up-button.show {
+    opacity: 1;
+}

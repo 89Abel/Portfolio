@@ -1,0 +1,92 @@
+:root {
+    --font: "Roboto", sans-serif;
+    --primary-color: #191E29;
+    --sec-color: #132D46;
+    --text-color: #01C38D;
+    --gre-color: #696E79;
+    --white-color: #FFFFFF;
+}
+@media only screen and (max-width: 600px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.footer {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    box-shadow: 1px -4px 12px -13px rgba(0,0,0,0.75);
+    z-index: 1000;
+}
+
+
+.footer-logo {
+    color: var(--text-color);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer-icon {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#icons:nth-child(1) {
+    color: var(--gre-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#icons:nth-child(2) {
+    color: var(--gre-color);
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#icons:nth-child(3) {
+    color: var(--gre-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#icons:nth-child(4) {
+    color: var(--gre-color);
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.footer-links .footer-link {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+
+.footer-copy {
+    font-size: 13px;
+}
+
+.footer-copy a {
+    color: var(--text-color);
+    text-decoration: underline;
+}

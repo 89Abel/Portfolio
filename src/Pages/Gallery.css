@@ -1,0 +1,123 @@
+:root {
+    --font: "Roboto", sans-serif;
+    --rubik: "Rubik Scribble", system-ui;
+    --primary-color: #191E29;
+    --sec-color: #132D46;
+    --text-color: #01C38D;
+    --gre-color: #696E79;
+    --white-color: #FFFFFF;
+}
+#Gallery{
+    position: relative;
+    width: 100%;
+}
+.Gallery-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Gallery-title{
+    position: relative;
+    font-family: var(--font);
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.Gallery-title::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+.Gallery-desc{
+    text-align: center;
+    font-family: var(--font);
+    line-height: 20px;
+}
+#Gallery .swiper {
+    margin-top: 30px;
+    padding: 0px 30px;
+  }
+  
+  #Gallery  .swiper-slide {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  #Gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Gallery-title{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .Gallery-desc{
+        font-size: 13px;
+        font-weight: 300;
+        margin: 10px 50px;
+    }
+    #Gallery .swiper {
+        width: 70%;
+        height: 400px;
+        margin-top: 40px;
+        padding: 0px 30px;
+      }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Gallery-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .Gallery-desc{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 10px 50px;
+    }
+    #Gallery .swiper {
+        width: 80%;
+        height: 500px;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Gallery-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .Gallery-desc{
+        max-width: 500px;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 30px 0px;
+    }
+    #Gallery .swiper {
+        width: 80%;
+        height: 700px;
+      }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
