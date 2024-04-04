@@ -36,6 +36,14 @@
         align-items: center;
         font-family: var(--font);
     }
+    .contact-right{
+        padding-top: 20px;
+        border-left: 1px solid var(--text-color);
+        padding: 0px 150px;
+    }
+    .contact-left{
+        padding: 0px 150px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -59,9 +67,7 @@ section {
     display: flex;
     font-family: var(--font);
 }
-.contact-left{
-    padding: 0px 150px;
-}
+
 .contact-left .contact-left-title{
     position: relative;
     color: var(--text-color);
@@ -100,8 +106,6 @@ margin-bottom: 10px;
 }
 .contact-right{
     padding-top: 20px;
-    border-left: 1px solid var(--text-color);
-    padding: 0px 150px;
 }
 .contact-right .contact-right-title{
     position: relative;

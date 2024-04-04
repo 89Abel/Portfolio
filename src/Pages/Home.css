@@ -320,9 +320,10 @@
     }
 
     .swiper-slide .title img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border: 5px solid var(--text-color);
+        object-fit: cover;
         border-radius: 50%;
     }
 
@@ -331,11 +332,21 @@
         font-size: 15px;
         max-width: 400px;
         text-align: center;
-        background-color: var(--text-color);
-        color: var(--white-color);
-        padding: 15px;
+        box-shadow: 4px 10px 38px 22px rgba(250,250,250,1);
+        color: var(--black);
+        padding: 35px 5px 10px 5px;
         margin-top: 10px;
         line-height: 1.3;
+    }
+    .swiper-slide .text::after{
+        position: absolute;
+        content: '"';
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        color: var(--text-color);
+        top: 0;
+        left: 0;
     }
 
 }
@@ -584,7 +595,7 @@
         flex-direction: column;
         padding: 30px;
         margin-bottom: 20px;
-        background-color: #f1f1f1f1;
+        background-color: #f1f1f1;
     }
 
     .plans-title {
@@ -612,6 +623,8 @@
     #testimonial {
         font-family: var(--font);
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         text-align: center;
         margin-bottom: 40px;
@@ -650,6 +663,7 @@
         height: 100px;
         border: 5px solid var(--text-color);
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .swiper-slide .text {
@@ -727,7 +741,7 @@ section {
 
 .scroll-up-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     background-color: var(--text-color);
     color: #fff;

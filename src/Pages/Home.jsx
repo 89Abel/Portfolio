@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import User from '../assets/user.jpg'
+import User_1 from '../assets/user_1.jpg'
+import User_2 from '../assets/user_2.jpg'
 import Person from '../assets/photographer.svg'
 import Photo from '../assets/photo_1.jpg'
 import Wedding from '../assets/wedding.svg'
@@ -194,7 +196,7 @@ const Home = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="title" data-swiper-parallax="-300">
-                                <img src={User} alt="" />
+                                <img src={User_1} alt="" />
                             </div>
                             <div className="text" data-swiper-parallax="-100">
                                 <p>
@@ -205,7 +207,7 @@ const Home = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="title" data-swiper-parallax="-300">
-                                <img src={User} alt="" />
+                                <img src={User_2} alt="" />
                             </div>
                             <div className="text" data-swiper-parallax="-100">
                                 <p>

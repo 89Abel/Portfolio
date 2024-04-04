@@ -13,7 +13,7 @@ const navbar = () => {
         <div className="navbar-container">
           <Link to='/' className='navbar-logo'>Eyu_Pics.</Link>
           <div className="menu-icon" onClick={handleClick}>
-            <ion-icon name={click ? "close" : "menu"}></ion-icon>
+            <ion-icon name={click ? "close" : "grid"}></ion-icon>
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
